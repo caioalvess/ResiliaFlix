@@ -1,8 +1,8 @@
 # ResiliaFlix
 
-projeto para o fim do módulo 2 Resília.
+Projeto para o fim do módulo 2 Resília.
 
-Site para busca de filmes e infirmações.
+Site para busca de filmes e informações.
 
 Aplicação feita para pôr em prática conceitos de Bootstrap 5 e API's (JavaScript).
 
