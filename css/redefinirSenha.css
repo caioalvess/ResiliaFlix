@@ -1,0 +1,371 @@
+/* Definindo padrão bg-dark do BTS para #1b1b1b */
+body {
+    background-color: #212529!important; 
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body, .btn-outline-info {
+    background-color: #b2ddf700;
+    color: #fff;
+    transition: 0.9s;
+  }
+  
+  .btn-outline-info:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #B2DDF7;
+    border-color: #0076c0;
+  }
+  
+  .btn-outline-info {
+    width: 100px;
+    border-radius: 0!important;
+    margin: 40px auto auto auto;
+    box-shadow: none!important;
+    border: solid 2px rgba(128, 128, 128, 0.534);
+  }
+  
+  /* O HEADER COMEÇA AQUI // COPIAR À PARTIR DAQUI*/
+  /* Zerando configurações padrão do BTS no botão hamburguer */
+  
+  .btnMenu {
+    border: none!important;
+    -webkit-appearance: none!important;
+    -ms-appearance: none!important;
+    -moz-appearance: none!important;
+    appearance: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+  }
+  
+  .navbar {
+    position: relative;
+    z-index: 1000;
+    max-height: 80px;
+    padding: 0 5px;
+    animation: fadeIn 2s;
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;  
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  .navBrand {
+    flex-grow: 1;
+  }
+  
+  .logo {
+    width: 170px;
+    height: 80px;
+  }
+  
+  .navbar img {
+    padding: 1px;
+  }
+  
+   .navbar .buttonList {
+    color: #fff;
+    max-width: 160px;
+    max-height: 165px;
+    background-color: rgba(17, 17, 17, 0.397);
+    position: absolute;
+    top: 75px;
+    left: -250px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    transition: all 0.5s ease-in-out;
+    opacity: .5;
+  } 
+  
+  .navbar.sidebar-open .buttonList {
+    left: -20px;
+    opacity: 1;
+    width: 250px;
+  } 
+  
+  .navbar .buttonList li {
+    padding: 0.4em 0.4em;
+    margin: 0 0 0 28px;
+    cursor: pointer;
+  }
+  .navbar ul li a {
+    text-decoration: none!important;
+  }
+  .navbar ul li:hover {
+    color: #B2DDF7;
+  }
+  
+  .flexList {
+    display: none;
+  }
+  
+  #icon {
+    margin: 0 5px 5px 0;
+    padding: 2px;
+  }
+  
+  .searchAndProfile {
+    display: flex!important;
+  
+    }
+  
+    #profile {
+      margin: 0 0 0 7px;
+    }
+  
+    /* O HEADER TEMRINA AQUI COPIAR ATÉ AQUI*/
+  
+    .title-signIn {
+      color: #B2DDF7!important;
+      /* text-transform: uppercase; */
+      font-weight: 300;
+    }
+  
+    .signIn {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 30em;
+      max-width: 60em;
+      animation: fadeIn 1.1s;
+    }
+  
+    @keyframes fadeIn {
+        from {
+            opacity: 0;  
+        }
+        to {
+            opacity: 1;
+        }
+    }
+  
+    .formSignIn {
+      padding: auto;
+    }
+  
+  /* ESTA É A ESTILIZAÇÃO DOS FORMULÁRIOS, OU SEJA, OS EFEITOS DE TRANSIÇÃO DO INPUT ESTÃO AQUI ! COPIEM */
+    
+    .form-control, .form-select {
+      border: 1px solid rgba(128, 128, 128, 0.425);
+      border-radius: 0!important;
+      background-color: rgba(17, 17, 17, 0.356);
+      color: rgba(128, 128, 128, 0.658);
+      box-shadow: none;
+      font-size: 12px;
+    }
+
+    .form-select {
+        color: rgba(255, 255, 255, 0.479)!important;
+    }
+
+    .form-select option {
+        color: white!important;
+    }
+    
+    input {
+      color: #fff!important;
+    }
+  
+    .form-control:focus {
+      box-shadow: none!important;
+      background-color: rgba(17, 17, 17, 0.938);
+      transition: all 0.9s ease-in-out;
+    }
+    .form-select:focus {
+      box-shadow: none!important;
+      background-color: rgba(17, 17, 17, 0.938);
+    }
+  
+    /* OS EFEITOS E ESTILIZAÇÃO DOS INPUTS TERMINAM AQUI// COPIAR ATÉ AQUI */
+  
+    /* ESTILO DE RESPONSIVIDADE DO FOOTER PARA A LETRA FICAR PEQUENA NO MOBILE // COPIEM AQUI */
+  
+    h6 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 13px!important;
+      font-weight: 100!important;
+    }
+
+    footer {
+      margin-top: 0;
+      padding: 25px;
+      animation: fadeIn 2s;
+    }
+  
+    @keyframes fadeIn {
+        from {
+            opacity: 0;  
+        }
+        to {
+            opacity: 1;
+        }
+    }
+  
+  /* ESTILO DE RESPONSIVIDADE DO FOOTER P/ MOBILE TERMINA AQUI // COPIAR ATÉ AQUI */
+  
+  @media (min-width: 576px) {
+  
+  /* LOGO AUMENTA DE TAMANHO QUANDO A TELA AUMENTA / COPIEM AQUI */
+  
+    .logo {
+      width: 190px;
+      height: 80px;
+    }
+  
+    /* LOGO AUMENTA DE TAMANHO QUANDO A TELA AUMENTA TERMINA AQUI / COPIEM ATÉ AQUI */
+  
+   /* ESTILO DE RESPONSIVIDADE DO FOOTER PARA A LETRA VOLTAR AO NORMAL COM TELAS MAIORES // COPIEM AQUI */
+  
+    h6 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 18px!important;
+    }
+  
+    /* ESTILO DE RESPONSIVIDADE DO FOOTER PARA A LETRA VOLTAR AO NORMAL COM TELAS MAIORES TERMINA AQUI // COPIEM ATÉ AQUI */
+  
+    .navbar .buttonList li {
+    padding: 0.8em 0.4em;
+    margin: 0 0 0 28px;
+    cursor: pointer;;
+  }
+  
+    .navbar .buttonList {
+      max-width: 160px;
+      max-height: 216px;
+    }
+  
+  .form-control, .form-select {
+      border: 1px solid rgba(128, 128, 128, 0.425);
+      border-radius: 0!important;
+      background-color: rgba(17, 17, 17, 0.356);
+      color: rgba(128, 128, 128, 0.658);
+      box-shadow: none;
+      font-size: 17px;
+    }
+  
+    footer {
+      margin-top: 0;
+      padding: 25px;
+    }
+  }
+  
+  @media (min-width: 769px){
+  
+  /* ESTILO DE RESPONSIVIDADE PARA FAZER O BOTÃO DE MENU SUMIR E A LISTA FLEX APARECER QUANDO A TELA AUMENTAR DE TAMANHO / COPIEM À PARTIR DAQUI */
+  
+    .navbar {
+      margin-bottom: 40px;
+    }
+    .btnMenu {
+      display: none;
+    }
+  
+    .navBrand {
+    flex-grow: 0;
+  }
+  
+    .navbar .buttonList li {
+    padding: 0.8em 0.4em;
+    margin: 0 0 0 28px;
+    cursor: pointer;
+    display: none;
+  
+  }
+
+  .navbar .buttonList {
+    color: #fff;
+    max-width: 160px;
+    max-height: 165px;
+    background-color: rgba(17, 17, 17, 0.397);
+    position: absolute;
+    top: 75px;
+    left: -250px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    transition: all 0.5s ease-in-out;
+    opacity: .5;
+    display: none;
+  } 
+  
+    .flexList {
+      width: 280px;
+      display: flex;
+      margin: 0 0 0 0;  
+      align-items: center;
+      justify-content: space-evenly;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    
+    .searchAndProfile {
+    display: flex!important;
+    }
+  
+    #profile {
+      margin: 0 0 0 30px;
+    }
+  
+    /* ESTILO DE RESPONSIVIDADE PARA FAZER O BOTÃO DE MENU SUMIR E A LISTA FLEX APARECER QUANDO A TELA AUMENTAR DE TAMANHO TERMINA AQUI / COPIEM ATÉ AQUI */
+  
+    .title-signIn {
+      color: #B2DDF7!important;
+    }
+  
+    .signIn {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      height: 35em;
+      padding: 0;
+    }
+  
+    .formSignIn {
+      background-color: rgba(17, 17, 17, 0.295);
+      padding: 0 25px 32px 25px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+  
+    .with-linear-gradient {
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(45deg, #0076c0, #daf0fd) 1;
+  }
+  
+    .btn-outline-info {
+    width: 100px;
+    border-radius: 0!important;
+    margin: 40px auto auto auto;
+    border: solid 2px rgba(128, 128, 128, 0.534);
+  }
+  
+    footer {
+      margin-top: 40px;
+      padding: 25px;
+      font-weight: 100!important;
+    }
+  }
+  
+  
+  @media (min-width: 1200px){
+  
+    /* RESPONSIVIDADE PARA FAZER A LOGO AUMENTAR DE TAMANHO PARA A TELAS GRANDES / COPIEM AQUI */
+  
+    .logo {
+      width: 250px;
+      height: 100px;
+    }
+  
+    /* RESPONSIVIDADE PARA FAZER A LOGO AUMENTAR DE TAMANHO PARA A TELAS GRANDES TERMINA AQUI / COPIEM ATÉ AQUI */
+  }

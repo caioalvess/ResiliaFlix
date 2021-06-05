@@ -1,0 +1,285 @@
+
+body{
+    background-color: #212529!important; 
+    font-family: 'Poppins', sans-serif
+}
+
+
+body, .btn-outline-info {
+  background-color: #b2ddf700;
+  color: #fff;
+  transition: 0.9s;
+}
+
+.btn-outline-info:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #B2DDF7;
+  border-color: #0076c0;
+}
+
+.btn-outline-info {
+  width: 100px;
+  border-radius: 0!important;
+  margin: 30px auto auto auto;
+  box-shadow: none!important;
+  border: solid 2px rgba(128, 128, 128, 0.534);
+}
+
+.btnMenu {
+  border: none!important;
+  -webkit-appearance: none!important;
+  -ms-appearance: none!important;
+  -moz-appearance: none!important;
+  appearance: none!important;
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+  max-height: 80px;
+  padding: 0 5px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;  
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navBrand {
+  flex-grow: 1;
+}
+
+.logo {
+  width: 170px;
+  height: 80px;
+}
+
+.navbar img {
+  padding: 1px;
+}
+
+ .navbar .buttonList {
+  color: #fff;
+  max-width: 160px;
+  max-height: 165px;
+  background-color: rgba(17, 17, 17, 0.397);
+  position: absolute;
+  top: 75px;
+  left: -250px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  transition: all 0.5s ease-in-out;
+  opacity: .5;
+} 
+
+.navbar.sidebar-open .buttonList {
+  left: -20px;
+  opacity: 1;
+  width: 250px;
+} 
+
+.navbar .buttonList li {
+  padding: 0.4em 0.4em;
+  margin: 0 0 0 28px;
+  cursor: pointer;
+}
+.navbar ul li a {
+  text-decoration: none!important;
+}
+.navbar ul li:hover {
+  color: #B2DDF7;
+}
+
+.flexList {
+  display: none;
+}
+
+#icon {
+  margin: 0 5px 5px 0;
+  padding: 2px;
+}
+
+.searchAndProfile {
+display: flex!important;
+
+  }
+
+  #profile {
+  margin: 0 0 0 7px;
+  }
+
+.Texts {
+  margin-top: 70px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;  
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.Texts h1 {
+  font-size: 40px;
+  color: #B2DDF7;
+  margin-bottom: 20px;
+}
+
+#socialIcon {
+  margin: 0 7px;
+}
+  
+
+.Cards {
+  height: 200vh;
+  display: flex;
+  flex-direction: column!important;
+  margin-top: 35px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;  
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.rowClass {
+  height: 300px;
+}
+
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px!important;
+  font-weight: 100!important;
+}
+
+footer {
+  margin-top: 0;
+  padding: 25px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;  
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  
+
+
+
+     
+    @media (min-width: 576px) {
+      .logo {
+          width: 190px;
+          height: 80px;
+        }
+  
+        .navbar .buttonList li {
+          padding: 0.8em 0.4em;
+          margin: 0 0 0 28px;
+          cursor: pointer;;
+        }
+        
+          .navbar .buttonList {
+            max-width: 160px;
+            max-height: 216px;
+          }
+        }
+
+        h6 {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 18px!important;
+        }
+      
+        
+      @media (min-width: 769px){
+          .navbar {
+              margin-bottom: 40px;
+            }
+            .btnMenu {
+              display: none;
+            }
+          
+            .navBrand {
+            flex-grow: 0;
+          }
+          
+            .navbar .buttonList li {
+            padding: 0.8em 0.4em;
+            margin: 0 0 0 28px;
+            cursor: pointer;
+            display: none;
+          
+          }
+        
+          
+            .flexList {
+              width: 280px;
+              display: flex;
+              margin: 0 0 0 0;  
+              align-items: center;
+              justify-content: space-evenly;
+              color: #fff;
+              font-size: 18px;
+              font-weight: 300;
+            }
+            
+            .searchAndProfile {
+            display: flex!important;
+            }
+          
+            #profile {
+              margin: 0 0 0 30px;
+            }
+          
+            .btn-outline-info {
+            width: 100px;
+            border-radius: 0!important;
+            margin: 30px auto auto auto;
+            border: solid 2px rgba(128, 128, 128, 0.534);
+          }
+
+          .Cards {
+            height: 60vh;
+            display: flex;
+            flex-direction: row!important;
+            margin-top: 35px;
+          }
+          
+      }
+          @media (min-width: 1200px){
+              .logo {
+                  width: 250px;
+                  height: 100px;
+                }
+
+                .Cards {
+                  height: 70vh;
+                  display: flex;
+                  flex-direction: row!important;
+                  margin-top: 35px;
+                }
+
+          }
+      

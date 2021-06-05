@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/bootstrap.*">
+  <title>Resilia Flix</title>
+</head>
+
+<body>
+  <!-- menu start -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+
+      <button type="button" class="navbar-toggler btnMenu">
+        <img src="./images/align-left.png" alt="Menu" height="30px" width="32px">
+      </button>
+      <a href="/index.html" class="navbar-brand navBrand">
+        <img src="./images/ResiliaflixLog-Blue.png" class='logo' alt="Logo">
+      </a>
+
+      <ul class="list-unstyled font-weight-bold buttonList">
+
+        <li><a href="index.html" class="text-reset"><img src="./images/home.png" id='icon' width="23px"
+              height="23px">Home</a></li>
+        <li><a href="./pages/buscafilme.html" class="text-reset"><img src="./images/play.png" id='icon' width="23px"
+              height="23px">Filmes</a></li>
+        <li><a href="/pages/sobre.html" class="text-reset"><img src="./images/information.png" id='icon' width="23px"
+              height="23px">Sobre</a></li>
+        <li><a href="./pages/contato.html" class="text-reset"><img src="./images/phone-call.png" id='icon' width="23px"
+              height="23px">Contato</a></li>
+
+      </ul>
+
+      <ul class="list-unstyled font-weight-bold flexList flex-grow-1">
+
+        <li><a href="index.html" class="text-reset"><img src="./images/home.png" id='icon' width="23px"
+              height="23px">Home</a></li>
+        <li><a href="../ResiliaFlix/pages/buscafilme.html" class="text-reset"><img src="./images/play.png" id='icon' width="23px"
+              height="23px">Filmes</a></li>
+        <li><a href="../ResiliaFlix/pages/sobre.html" class="text-reset"><img src="./images/information.png" id='icon' width="23px"
+              height="23px">Sobre</a></li>
+        <li><a href="../ResiliaFlix/pages/contato.html" class="text-reset"><img src="./images/phone-call.png" id='icon' width="23px"
+              height="23px">Contato</a></li>
+      </ul>
+
+      <ul class="navbar-nav flex-grow-2 searchAndProfile d-flex flex-row">
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/buscafilme.html"><img src="./images/loupe.png" id='icon' width="33px"
+              height="33px"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id='profile' href="./pages/login.html"><img src="./images/user.png" id='icon' width="30px"
+              height="30px"></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- menu end -->
+    <!-- Caio felipe Teste -->
+
+
+    <!-- carousel start -->
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="filme1">
+          <div class="carousel-caption d-none d-md-block ">
+
+            <h1>O Exorcista</h1>
+            <p>O Exorcista é uma série de filmes de terror americanos que consiste em cinco filmes baseados no romance
+              de 1971 O Exorcista, de William Peter Blatty. Os filmes foram distribuídos pela Warner Bros. Pictures e
+              pela 20th Century Fox. Os filmes arrecadaram mais de US $ 661 milhões nas bilheterias mundiais.</p>
+            <button class="btn btn-lg btn-primary " href="#" role="button" onclick="findMovie('the exorcist')">Ver
+              mais</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="filme2">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>O Iluminado</h1>
+            <p>Jack Torrance se torna caseiro de inverno do isolado Hotel Overlook, nas montanhas do Colorado, na
+              esperança de curar seu bloqueio de escritor. Ele se instala com a esposa Wendy e o filho Danny, que é
+              atormentando por premonições. Jack não consegue escrever e as visões de Danny se tornam mais
+              perturbadoras. O escritor descobre os segredos sombrios do hotel e começa a se transformar em um maníaco
+              homicida, aterrorizando sua família.</p>
+            <button class="btn btn-lg btn-primary " href="#" role="button" onclick="findMovie('The Shining')">Ver
+              mais</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="filme3">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Minha Mãe é Uma Peça</h1>
+            <p>Dona Hermínia é uma mulher de meia idade, divorciada do marido, que a trocou por uma mais jovem.
+              Hiperativa, ela não larga o pé de seus filhos Marcelina e Juliano, que já estão bem grandinhos. Um dia,
+              após descobrir que eles a consideram uma chata, resolve sair de casa sem avisar ninguém, deixando todos,
+              de alguma forma, preocupados com o que teria acontecido. Mal sabem eles que a mãe foi visitar a querida
+              tia Zélia para desabafar suas tristezas do presente e recordar os bons tempos do passado.</p>
+            <button class="btn btn-lg btn-primary " href="#" role="button"
+              onclick="findMovie('My Mom Is A Character')">Ver
+              mais</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="filme4">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Meu Pai</h1>
+            <p>Anthony tem 81 anos de idade. Ele mora sozinho em seu apartamento em Londres, e recusa todos os
+              cuidadores que sua filha, Anne, tenta impor a ele. Mas isso se torna uma necessidade maior quando ela
+              resolve se mudar para Paris com um homem que conheceu há pouco, e não poderá estar com pai todo dia. Fatos
+              estanhos começam a acontecer: um desconhecido diz que este é o seu apartamento. Anne se contradiz, e nada
+              mais faz sentido na cabeça de Anthony. Estaria ele enlouquecendo, ou seria um plano de sua filha para o
+              tirar de casa?</p>
+            <button class="btn btn-lg btn-primary " href="#" role="button" onclick="findMovie('My Father')">Ver
+              mais</button>
+          </div>
+        </div>
+      </div>
+      <!-- controller -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel end -->
+    <!-- according start -->
+    <div class="accordion" id="ListMovies">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Comedia
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#ListMovies">
+          <div class="accordion-body">
+            <div id="carouselMovies1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('Untouchables')"> <img src="./images/comedia/014.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Hangover')"> <img src="./images/comedia/002.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('White Chicks')"> <img src="./images/comedia/003.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The 40 Year-Old Virgin')"> <img src="./images/comedia/004.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Witches')"> <img src="./images/comedia/005.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Jumanji')"> <img src="./images/comedia/006.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('My Mom Is A Character')"> <img src="./images/comedia/007.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Wreck-It Ralph')"> <img src="./images/comedia/008.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Abominable')"> <img src="./images/comedia/009.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Boss Baby')"> <img src="./images/comedia/010.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('the croods')"> <img src="./images/comedia/011.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Ballerina')"> <img src="./images/comedia/012.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('Superbad')"> <img src="./images/comedia/013.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Untouchables')"> <img src="./images/comedia/014.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('My Mom Is A Character')"> <img src="./images/comedia/001.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Hangover')"> <img src="./images/comedia/002.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('White Chicks')"> <img src="./images/comedia/003.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The 40 Year-Old Virgin')"> <img src="./images/comedia/004.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMovies1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMovies1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Terror
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#ListMovies">
+          <div class="accordion-body">
+            <div id="carouselMovies2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('the exorcist')"> <img src="./images/terror/001.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Shining')"> <img src="./images/terror/002.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Psycho')"> <img src="./images/terror/003.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Conjuring')"> <img src="./images/terror/004.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Fantasy Island')"> <img src="./images/terror/005.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Lodge')"> <img src="./images/terror/006.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('Underwater')"> <img src="./images/terror/007.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Doctor Sleep ')"> <img src="./images/terror/008.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Hereditary')"> <img src="./images/terror/009.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Silence')"> <img src="./images/terror/010.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Autopsy of Jane Doe')"> <img src="./images/terror/011.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('it')"> <img src="./images/terror/012.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie(`Gerald's game`)"> <img src="./images/terror/013.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('bird box')"> <img src="./images/terror/014.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Get Out')"> <img src="./images/terror/015.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Hereditary')"> <img src="./images/terror/016.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Train to Busan')"> <img src="./images/terror/017.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Hunt')"> <img src="./images/terror/018.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMovies2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMovies2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Drama
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#ListMovies">
+          <div class="accordion-body">
+            <div id="carouselMovies3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('the father')"> <img src="./images/drama/001.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('little woman')"> <img src="./images/drama/002.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Butterfly Effect')"> <img src="./images/drama/003.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Pursuit of Happyness')"> <img src="./images/drama/004.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('I Still Believe')"> <img src="./images/drama/005.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('All the Bright Places')"> <img src="./images/drama/006.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('little woman')"> <img src="./images/drama/007.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie(`I Think We're Alone Now`)"> <img src="./images/drama/008.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Leave No Trace')"> <img src="./images/drama/009.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('diecisiete')"> <img src="./images/drama/010.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Miracle in Cell No. 7')"> <img src="./images/drama/011.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('Collateral Beauty')"> <img src="./images/drama/012.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <button onclick="findMovie('Me Before You')"> <img src="./images/drama/013.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Lighthouse')"> <img src="./images/drama/014.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('the father')"> <img src="./images/drama/001.jpg" class="d-block w-15"
+                          alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('little woman')"> <img src="./images/drama/002.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Butterfly Effect')"> <img src="./images/drama/003.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                    <div class="col-2">
+                      <button onclick="findMovie('The Pursuit of Happyness')"> <img src="./images/drama/004.jpg"
+                          class="d-block w-15" alt="..."></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMovies3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMovies3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- according end -->
+    <!-- footer end -->
+    <footer class="d-flex flex-direction-column align-itens-center justify-content-center">
+      <div class="row">
+        <div class="col-12 my-2">
+          <h6 class='text-center text-white lead onlineFilms'>resiliaflix - catálogo de fimes online</h6>
+        </div>
+        <div class="col-12">
+          <h6 class='text-center text-white lead'><small>©todos os direitos reservados</small></h6>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"></script>
+    <script src="js/principal.js"></script>
+    <script src="../js/sideBar.js"></script>
+    <script src="js/bootstrap.*"></script>
+</body>
+
+</html>

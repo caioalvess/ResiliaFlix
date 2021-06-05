@@ -1,0 +1,321 @@
+body {
+    background-color: #212529 !important;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+.btn-outline-info {
+    background-color: #b2ddf700;
+    color: #fff;
+    transition: 0.9s;
+}
+
+.btn-outline-info:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #b2ddf7;
+    border-color: #0076c0;
+}
+
+.btn-outline-info {
+    width: 100px;
+    border-radius: 0 !important;
+    margin: 30px auto auto auto;
+    box-shadow: none !important;
+    border: solid 2px rgba(128, 128, 128, 0.534);
+}
+
+.btnMenu {
+    border: none !important;
+    -webkit-appearance: none !important;
+    -ms-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+    max-height: 80px;
+    padding: 0 5px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navBrand {
+    flex-grow: 1;
+}
+
+.logo {
+    width: 170px;
+    height: 80px;
+}
+
+.navbar img {
+    padding: 1px;
+}
+
+.navbar .buttonList {
+    color: #fff;
+    max-width: 160px;
+    max-height: 165px;
+    background-color: rgba(17, 17, 17, 0.397);
+    position: absolute;
+    top: 75px;
+    left: -250px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.navbar.sidebar-open .buttonList {
+    left: -20px;
+    opacity: 1;
+    width: 250px;
+}
+
+.navbar .buttonList li {
+    padding: 0.4em 0.4em;
+    margin: 0 0 0 28px;
+    cursor: pointer;
+}
+.navbar ul li a {
+    text-decoration: none !important;
+    font-weight: 100 !important;
+}
+.navbar ul li:hover {
+    color: #b2ddf7;
+}
+
+.flexList {
+    display: none;
+}
+
+#icon {
+    margin: 0 5px 5px 0;
+    padding: 2px;
+}
+
+/* carousel end */
+.searchAndProfile {
+    display: flex !important;
+}
+
+#profile {
+    margin: 0 0 0 7px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    border-radius: 0 !important;
+    background-color: rgba(17, 17, 17, 0.356);
+    color: rgba(128, 128, 128, 0.658);
+    box-shadow: none;
+    font-size: 12px;
+}
+.carousel-control-prev {
+    width: 45px;
+}
+.carousel-control-next {
+    width: 45px;
+}
+.accordion-button {
+    color: white;
+    background-color: #39393a;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+    background-color: #39393a;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #39393a;
+}
+.accordion-body {
+    height: auto;
+}
+
+/* .accordion-body img {
+width: 5vw;
+height: 5vw;
+background: white;
+} */
+
+.accordion-item {
+    background-color: #39393a;
+}
+#myCarousel .carousel-item {
+    height: 40vw;
+    color: white;
+    position: relative;
+}
+#myCarousel {
+    height: 40vw;
+    position: relative;
+}
+
+.accordion-item img {
+    height: 15vw;
+}
+input {
+    color: #fff !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    background-color: rgba(17, 17, 17, 0.938);
+    transition: 0.9s;
+}
+.form-select:focus {
+    box-shadow: none !important;
+    background-color: rgba(17, 17, 17, 0.938);
+}
+#filme1 {
+    background-image: url("../images/mainFilmes/001.jpg");
+    background-size: cover;
+}
+#filme2 {
+    background-image: url("../images/mainFilmes/002.jpg");
+    background-size: cover;
+}
+#filme3 {
+    background-image: url("../images/mainFilmes/003.jpg");
+    background-size: cover;
+}
+#filme4 {
+    background-image: url("../images/mainFilmes/004.jpg");
+    background-size: cover;
+}
+.carousel-caption {
+    text-shadow: 0 1px 0 #212529;
+}
+@media (min-width: 576px) {
+    .logo {
+        width: 190px;
+        height: 80px;
+    }
+    h6 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px !important;
+    }
+
+    .navbar .buttonList li {
+        padding: 0.8em 0.4em;
+        margin: 0 0 0 28px;
+        cursor: pointer;
+    }
+
+    .navbar .buttonList {
+        max-width: 160px;
+        max-height: 216px;
+    }
+
+    .form-control,
+    .form-select {
+        border: 1px solid rgba(128, 128, 128, 0.425);
+        border-radius: 0 !important;
+        background-color: rgba(17, 17, 17, 0.356);
+        color: rgba(128, 128, 128, 0.658);
+        box-shadow: none;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        margin-bottom: 40px;
+    }
+    .btnMenu {
+        display: none;
+    }
+
+    .navBrand {
+        flex-grow: 0;
+    }
+
+    .navbar .buttonList li {
+        padding: 0.8em 0.4em;
+        margin: 0 0 0 28px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .custom-field {
+        display: none;
+    }
+
+    .flexList {
+        width: 280px;
+        display: flex;
+        margin: 0 0 0 0;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .searchAndProfile {
+        display: flex !important;
+    }
+
+    #profile {
+        margin: 0 0 0 30px;
+    }
+    .title-signUp {
+        color: #b2ddf7 !important;
+    }
+
+    .signUp {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        height: 35em;
+        padding: 0;
+    }
+
+    .formSignUp {
+        background-color: rgba(17, 17, 17, 0.295);
+        padding: 0 25px 32px 25px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .with-linear-gradient {
+        border-style: solid;
+        border-width: 1px;
+        border-image: linear-gradient(45deg, #0076c0, #daf0fd) 1;
+    }
+
+    .btn-outline-info {
+        width: 100px;
+        border-radius: 0 !important;
+        margin: 30px auto auto auto;
+        border: solid 2px rgba(128, 128, 128, 0.534);
+    }
+
+    footer {
+        margin-top: 0px;
+        padding: 25px;
+        font-weight: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .logo {
+        width: 250px;
+        height: 100px;
+    }
+}
