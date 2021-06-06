@@ -20,4 +20,3 @@ GitHub Pages - https://caioalvess.github.io/ResiliaFlix/index.html
     -   Data das reuniões e pautas
 -   [NOTAS](https://doc.clickup.com/d/h/2z202-17/7a4ffa37a389714)
     -   Notas para desenvolvimento
-# ResiliaFlix
